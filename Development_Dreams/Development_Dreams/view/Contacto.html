@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    
+    <link rel="stylesheet" href="../style/estilos.css">
+    <link rel="stylesheet" href="../style/Contacto.css">
+    <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/sweetalert2.min.css">
+</head>
+<body>
+
+    <script src="../JS/sweetalert2.min.js"></script>
+    
+    <header class="Contacto">
+        <nav>
+            <a href="Index.html">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="#">Servicios</a>
+            <a href="#">Redes Sociales</a>
+        </nav>
+        <div class="Datos">
+            <form action="../php/Correo.php" method="post">
+                <h1>Contactanos</h1>
+                <h2>Presupuestos Gratis</h2>
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre" required>
+                
+                <input id="mail" type="email" name="correo" placeholder="Correo" required>
+                
+                <input id="telefono" type="number" name="telefono" placeholder="Telefono" required max="999999999999"> 
+                 
+                <textarea id="texto" name="mensaje" placeholder="Mensaje"></textarea>
+                   
+                <input id="boton" class="Button" type="submit" value="Enviar">
+                
+            </form>
+        </div>
+    </header>
+
+    <script src="../JS/Jquerry.min.js"></script>
+                <script src="../JS/etc.js"></script>
+
+</body>
+</html>
